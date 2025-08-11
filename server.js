@@ -18,7 +18,7 @@ async function getToken() {
   if (!KEY || !SECRET) throw new Error("No SPACEMEDIA_TOKEN or KEY/SECRET set");
   const r = await fetch(`${BASE}/api/v1/token`, {
     method: "POST",
-    headers: { "X-Api-Key": KEY, "X-Api-Secret": SECRET }
+    headers: { "X-Api-Key": f423b755-d3f2-4474-8f36-a31c20acf769, "X-Api-Secret": kP7oGKCBluMog4pNW8gaeAixSWJfXBoxYx7TpGwQ }
   });
   if (!r.ok) throw new Error(`Token fetch failed: ${r.status} ${await r.text()}`);
   const data = await r.json();
